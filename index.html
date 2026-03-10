@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A surprise for my queen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tree.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <div class="night"></div>
+    <div class="bubbles">
+        <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+        </div>
+
+    <div id="tree-container"></div>
+
+    <div id="floating-messages-container"></div>
+
+    <div id="floating-photos-container"></div>
+
+    <div class="ui-layer">
+        
+        <section id="screen-1" class="screen active">
+            <div class="glass-panel text-center flex-center">
+                <h1>Are you ready? ✨</h1>
+                <button id="start-btn" class="primary-btn mt-1">Let's Start</button>
+            </div>
+        </section>
+
+        <section id="screen-2" class="screen">
+            <div class="glass-panel text-center flex-center">
+                <h1 class="fade-in-text">Happy Birthday! 🎉</h1>
+                <div id="age-timer" class="timer-container fade-in-text mt-2">
+                    <h3>The world became better the moment you arrived</h3>
+                    
+                    <div class="timer-grid">
+                        <div class="time-circle">
+                            <span id="years">0</span>
+                            <small>YRS</small>
+                        </div>
+                        <div class="time-circle">
+                            <span id="months">0</span>
+                            <small>MOS</small>
+                        </div>
+                        <div class="time-circle">
+                            <span id="days">0</span>
+                            <small>DAYS</small>
+                        </div>
+                        <div class="time-circle">
+                            <span id="hours">0</span>
+                            <small>HRS</small>
+                        </div>
+                        <div class="time-circle">
+                            <span id="minutes">0</span>
+                            <small>MIN</small>
+                        </div>
+                        <div class="time-circle">
+                            <span id="seconds">0</span>
+                            <small>SEC</small>
+                        </div>
+                    </div>
+                </div>
+                <button id="next-to-gift-btn" class="primary-btn fade-in-text mt-2">What's Next?</button>
+            </div>
+        </section>
+
+        <section id="screen-3" class="screen">
+            <!-- glass-panel text-center flex-center -->
+            <div class="glass-panel text-center flex-center"> 
+                <h1>I have a little surprise for you.</h1>
+                <p>Do you want to see your gift?</p>
+                <div class="button-group">
+                    <button id="yes-btn" class="primary-btn">Yes, please!</button>
+                    <button id="no-btn" class="secondary-btn">No, thanks</button>
+                </div>
+                <p id="no-message" class="hidden error-text">You can't deny, it's my order! 😤</p>
+            </div>
+        </section>
+
+        <section id="screen-4" class="screen">
+            <div class="glass-panel small-top">
+                <h1>The garden is yours 🌸</h1>
+                <p>Click on the blooming flowers to reveal your gifts!</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="content-modal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
